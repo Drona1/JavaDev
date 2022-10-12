@@ -31,7 +31,7 @@ public class MissingNumber {
     private static int[] createArray(int length) {
         Random rnd = new Random();
         int[] array = new int[length];
-        int counter = 0;
+        int index;
         int missNum;
         do {
             missNum = rnd.nextInt(length + 1);
@@ -39,15 +39,20 @@ public class MissingNumber {
 
         for (int i = 1; i <= length + 1; i++) {
             if (i == missNum) continue;
-            array[counter++] = i;
+            do {
+                index = rnd.nextInt(length);
+            } while (array[index] != 0);
+            array[index] = i;
         }
         return array;
     }
 
     private static int findMissingNumber(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] != i + 1) return i + 1;
+        long sumWithoutMissingNumber = (1 + array.length) * array.length / 2;
+        long sumWithMissingNumber = 0;
+        for (int i : array) {
+            sumWithMissingNumber += i;
         }
-        return 0;
+        return array.length + 1 - (int) (sumWithMissingNumber - sumWithoutMissingNumber);
     }
 }
