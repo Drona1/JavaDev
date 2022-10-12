@@ -11,16 +11,11 @@ import java.util.*;
 public class Maze {
 
     public static void main(String[] args) {
-        boolean[][] maze = {
-                {true, false, true, true, false, true, true, true},
-                {true, false, true, false, true, true, true, true},
-                {true, true, true, true, true, false, true, true},
-                {false, false, false, false, false, true, true, true}
-        };
+        boolean[][] maze = mazeBuilder(mazeSizeQuery());
         printMaze(maze);
 
         List<List<Point>> allWays = mazeRunner(maze);
-
+        System.out.println(allWays.size()+" ways found.");
         System.out.println("Shortest way: ");
         int min = allWays.get(0).size();
         int minIndex = 0;
@@ -33,11 +28,32 @@ public class Maze {
         System.out.println(allWays.get(minIndex));
         printMaze(maze, allWays.get(minIndex));
 
-        System.out.println("All ways:");
-        for (List<Point> way: allWays){
-            System.out.println(way);
-            printMaze(maze, way);
+//        !!!!! in large mazes problems are possible due to the large number of ways
+//
+//        System.out.println("All ways:");
+//
+//        for (List<Point> way : allWays) {
+//            System.out.println(way);
+//            printMaze(maze, way);
+//        }
+
+    }
+
+    private static int[] mazeSizeQuery() {
+        Scanner scanner = new Scanner(System.in);
+        String[] input;
+        do {
+            System.out.println("Enter the size of the maze (2 numbers separated by commas, recommended: 5,5): ");
+            input = scanner.nextLine().split(",");
+        } while (input.length != 2);
+        int[] size = new int[2];
+        size[0] = Integer.valueOf(input[0]);
+        size[1] = Integer.valueOf(input[1]);
+        if (size[0] == 0 || size[1] == 0) {
+            System.out.println("Data entry error, maze size will be 5x5");
+            size[0] = size[1] = 5;
         }
+        return size;
     }
 
     private static List<List<Point>> mazeRunner(boolean[][] maze) {
@@ -140,8 +156,57 @@ public class Maze {
             }
             System.out.println(WALL); //print exterior wall (right)
         }
+
+    }
+
+    private static boolean[][] mazeBuilder(int[] size) {
+        ArrayList<Point> way = new ArrayList<>();
+        Random random = new Random();
+        int rnd;
+        int coordX = 0;
+        int coordY = 0;
+        final int SIZEX = size[0];
+        final int SIZEY = size[1];
+        boolean[][] maze = new boolean[SIZEY][SIZEX];
+
+
+        way.add(new Point(coordY, coordX));
+        while (coordX != SIZEX - 1 || coordY != SIZEY - 1) {
+
+            rnd = random.nextInt(1, 11);
+
+            if (rnd <= 4 && coordX < SIZEX - 1) {
+                coordX++;
+            } else if (rnd <= 8 && coordY < SIZEY - 1) {
+                coordY++;
+            } else if (rnd == 9 && coordX > 0) {
+                coordX--;
+            } else if (coordY > 0) {
+                coordY--;
+            } else {
+                continue;
+            }
+            way.add(new Point(coordY, coordX));
+        }
+        for (int i = 0; i < SIZEY; i++) {
+            for (int j = 0; j < SIZEX; j++) {
+
+                random.nextBoolean();
+                for (int k = 0; k < way.size(); k++) {
+                    if (way.get(k).getCOORDX() == j && way.get(k).getCOORDY() == i) {
+                        maze[i][j] = true;
+                        break;
+                    }
+                    if (k == way.size() - 1)
+                        maze[i][j] = random.nextBoolean();
+                }
+            }
+        }
+
+        return maze;
     }
 }
+
 
 class Point {
     private final int COORDX;
