@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ac9672ff-fc6d-4d68-9dc5-cc666f6b64cf" name="Changes" comment="Homework3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid24100.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/Maze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665586743460</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Homework3">
+      <created>1665594347713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665594347713</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -63,36 +63,36 @@ public class Maze {
     private static List<List<Point>> movement(ArrayList way, boolean[][] maze,
                                               Point position, List<List<Point>> listList) {
         way.add(position);
-        int COORDX = position.getCOORDX();
-        int COORDY = position.getCOORDY();
+        int coordX = position.getCoordX();
+        int coordY = position.getCoordY();
 
         //finish
-        if (COORDX == maze[0].length - 1 && COORDY == maze.length - 1) {
+        if (coordX == maze[0].length - 1 && coordY == maze.length - 1) {
             listList.add((ArrayList) way.clone());
             way.remove(way.size() - 1);
-            maze[COORDY][COORDX] = true;
+            maze[coordY][coordX] = true;
             return listList;
         }
 
         //mark the path
-        maze[COORDY][COORDX] = false;
+        maze[coordY][coordX] = false;
 
-        if (COORDY - 1 >= 0 && maze[COORDY - 1][COORDX]) {
-            movement(way, maze, new Point(COORDY - 1, COORDX), listList);
+        if (coordY - 1 >= 0 && maze[coordY - 1][coordX]) {
+            movement(way, maze, new Point(coordY - 1, coordX), listList);
         }
-        if (COORDY + 1 < maze.length && maze[COORDY + 1][COORDX]) {
-            movement(way, maze, new Point(COORDY + 1, COORDX), listList);
+        if (coordY + 1 < maze.length && maze[coordY + 1][coordX]) {
+            movement(way, maze, new Point(coordY + 1, coordX), listList);
         }
-        if (COORDX - 1 >= 0 && maze[COORDY][COORDX - 1]) {
-            movement(way, maze, new Point(COORDY, COORDX - 1), listList);
+        if (coordX - 1 >= 0 && maze[coordY][coordX - 1]) {
+            movement(way, maze, new Point(coordY, coordX - 1), listList);
         }
-        if (COORDX + 1 < maze[COORDY].length && maze[COORDY][COORDX + 1]) {
-            movement(way, maze, new Point(COORDY, COORDX + 1), listList);
+        if (coordX + 1 < maze[coordY].length && maze[coordY][coordX + 1]) {
+            movement(way, maze, new Point(coordY, coordX + 1), listList);
         }
 
         //dead end
         way.remove(way.size() - 1);
-        maze[COORDY][COORDX] = true;
+        maze[coordY][coordX] = true;
         return listList;
     }
 
@@ -134,12 +134,12 @@ public class Maze {
                         //print way
                         if (way != null) {
                             for (int k = 0; k < way.size(); k++) {
-                                if (way.get(k).getCOORDX() == j && way.get(k).getCOORDY() == i) {
-                                    if (way.get(k + 1).getCOORDX() < j) {
+                                if (way.get(k).getCoordX() == j && way.get(k).getCoordY() == i) {
+                                    if (way.get(k + 1).getCoordX() < j) {
                                         System.out.print(LEFT);
-                                    } else if (way.get(k + 1).getCOORDX() > j) {
+                                    } else if (way.get(k + 1).getCoordX() > j) {
                                         System.out.print(RIGHT);
-                                    } else if (way.get(k + 1).getCOORDY() > i) {
+                                    } else if (way.get(k + 1).getCoordY() > i) {
                                         System.out.print(DOWN);
                                     } else {
                                         System.out.print(UP);
@@ -190,10 +190,8 @@ public class Maze {
         }
         for (int i = 0; i < SIZEY; i++) {
             for (int j = 0; j < SIZEX; j++) {
-
-                random.nextBoolean();
                 for (int k = 0; k < way.size(); k++) {
-                    if (way.get(k).getCOORDX() == j && way.get(k).getCOORDY() == i) {
+                    if (way.get(k).getCoordX() == j && way.get(k).getCoordY() == i) {
                         maze[i][j] = true;
                         break;
                     }
@@ -212,16 +210,16 @@ class Point {
     private final int COORDX;
     private final int COORDY;
 
-    public Point(int COORDY, int COORDX) {
-        this.COORDX = COORDX;
-        this.COORDY = COORDY;
+    public Point(int coordY, int coordX) {
+        this.COORDX = coordX;
+        this.COORDY = coordY;
     }
 
-    public int getCOORDX() {
+    public int getCoordX() {
         return COORDX;
     }
 
-    public int getCOORDY() {
+    public int getCoordY() {
         return COORDY;
     }
 
