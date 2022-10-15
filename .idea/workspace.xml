@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac9672ff-fc6d-4d68-9dc5-cc666f6b64cf" name="Changes" comment="Homework3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/Alphabet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/ControlFlowStatements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/MultipleOfFive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/TipTop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/findEntrance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/findMinimum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/findSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/MissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/MissingNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +60,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Maze">
     <configuration name="Maze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaStart.homework2.advanced.Maze" />
       <module name="JavaDev" />
@@ -130,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
         <item itemvalue="Application.Maze" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.TipTop" />
         <item itemvalue="Application.MultipleOfFive" />
         <item itemvalue="Application.findSum" />
@@ -182,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665645830109</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Homework3">
+      <created>1665833420427</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665833420427</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

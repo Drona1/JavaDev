@@ -3,8 +3,8 @@ package javaStart.homework2.advanced;
 //Написать метод, который принимает на вход boolean[][] - игровое поле,
 // где есть свободные поля, а есть занятые клетки.
 // Метод должен провести игрока от верхнего левого угла до нижнего
-// правого и вернуть возможный путь List<Point>.
-// Все пути<List<List<Point>>>?
+// правого и вернуть возможный путь List<>.
+// Все пути<List<List<>>>?
 
 import java.util.*;
 
@@ -15,13 +15,12 @@ public class Maze {
         printMaze(maze);
 
         if (maze.length * maze[0].length > 50) {
-            List<Point> way = mazeRunnerWithWave(maze);
-            System.out.println("Shortest way: ");
+            List<int[]> way = mazeRunnerWithWave(maze);
+            System.out.println("Shortest way (" + way.size() + " steps): ");
             printMaze(maze, way);
         } else {
-            List<List<Point>> allWays = mazeRunner(maze);
+            List<List<int[]>> allWays = mazeRunner(maze);
             System.out.println(allWays.size() + " ways found.");
-            System.out.println("Shortest way: ");
             int min = allWays.get(0).size();
             int minIndex = 0;
             for (int i = 0; i < allWays.size(); i++) {
@@ -30,16 +29,24 @@ public class Maze {
                     minIndex = i;
                 }
             }
-            System.out.println(allWays.get(minIndex));
+            System.out.println("Shortest way (" + min + " steps): ");
+            for (int[] i : allWays.get(minIndex)) {
+                System.out.print(Arrays.toString(i));
+            }
+            System.out.println();
             printMaze(maze, allWays.get(minIndex));
-            //        !!!!! in large mazes problems are possible due to the large number of ways
+
+//        !!!!! in large mazes problems are possible due to the large number of ways
 //
 //        System.out.println("All ways:");
 //
-//        for (List<Point> way : allWays) {
-//            System.out.println(way);
-//            printMaze(maze, way);
-//        }
+//            for (List<int[]> way : allWays) {
+//                for (int[] i:way) {
+//                    System.out.print (Arrays.toString(i));
+//                }
+//                System.out.println();
+//                printMaze(maze, way);
+//            }
         }
     }
 
@@ -47,7 +54,8 @@ public class Maze {
         try (Scanner scanner = new Scanner(System.in)) {
             String[] input;
             do {
-                System.out.println("Enter the size of the maze (2 numbers separated by commas, recommended: 5,5): ");
+                System.out.println("Enter the size of the maze " +
+                        "(2 numbers separated by commas, recommended: 5,5):");
                 input = scanner.nextLine().split(",");
             } while (input.length != 2);
             int[] size = new int[2];
@@ -66,32 +74,32 @@ public class Maze {
 
     }
 
-    private static List<Point> mazeRunnerWithWave(boolean[][] maze) {
+    private static List<int[]> mazeRunnerWithWave(boolean[][] maze) {
         int[][] pathOfWave = makeWave(maze);
-        List<Point> way = new LinkedList<>();
+        List<int[]> way = new LinkedList<>();
         int sizeX = pathOfWave[0].length;
         int sizeY = pathOfWave.length;
         int x = sizeX - 1;
         int y = sizeY - 1;
-        way.add(0, new Point(y, x));
+        way.add(0, new int[]{y, x});
         do {
 
             for (int i = -1; i <= 1; i += 2) {
                 if (y + i < sizeY && y + i >= 0 &&
                         pathOfWave[y + i][x] == pathOfWave[y][x] - 1) {
                     y = y + i;
-                    way.add(0, new Point(y, x));
+                    way.add(0, new int[]{y, x});
                     break;
                 }
                 if (x + i < sizeX && x + i >= 0 &&
                         pathOfWave[y][x + i] == pathOfWave[y][x] - 1) {
                     x = x + i;
-                    way.add(0, new Point(y, x));
+                    way.add(0, new int[]{y, x});
                     break;
                 }
             }
         } while (pathOfWave[y][x] != 1);
-        way.add(0, new Point(0, 0));
+        way.add(0, new int[]{0, 0});
         return way;
     }
 
@@ -131,19 +139,19 @@ public class Maze {
         return pathOfWave;
     }
 
-    private static List<List<Point>> mazeRunner(boolean[][] maze) {
-        return movement(new ArrayList<>(), maze, new Point(0, 0), new ArrayList<>());
+    private static List<List<int[]>> mazeRunner(boolean[][] maze) {
+        return movement(new ArrayList<>(), maze, new int[]{0, 0}, new ArrayList<>());
     }
 
-    private static List<List<Point>> movement(ArrayList<Point> way, boolean[][] maze,
-                                              Point position, List<List<Point>> listList) {
+    private static List<List<int[]>> movement(ArrayList<int[]> way, boolean[][] maze,
+                                              int[] position, List<List<int[]>> listList) {
         way.add(position);
-        int coordX = position.getCoordX();
-        int coordY = position.getCoordY();
+        int coordX = position[1];
+        int coordY = position[0];
 
         //finish
         if (coordX == maze[0].length - 1 && coordY == maze.length - 1) {
-            listList.add((ArrayList<Point>) way.clone());
+            listList.add((ArrayList<int[]>) way.clone());
             way.remove(way.size() - 1);
             return listList;
         }
@@ -152,16 +160,16 @@ public class Maze {
         maze[coordY][coordX] = false;
 
         if (coordY - 1 >= 0 && maze[coordY - 1][coordX]) {
-            movement(way, maze, new Point(coordY - 1, coordX), listList);
+            movement(way, maze, new int[]{coordY - 1, coordX}, listList);
         }
         if (coordY + 1 < maze.length && maze[coordY + 1][coordX]) {
-            movement(way, maze, new Point(coordY + 1, coordX), listList);
+            movement(way, maze, new int[]{coordY + 1, coordX}, listList);
         }
         if (coordX - 1 >= 0 && maze[coordY][coordX - 1]) {
-            movement(way, maze, new Point(coordY, coordX - 1), listList);
+            movement(way, maze, new int[]{coordY, coordX - 1}, listList);
         }
         if (coordX + 1 < maze[coordY].length && maze[coordY][coordX + 1]) {
-            movement(way, maze, new Point(coordY, coordX + 1), listList);
+            movement(way, maze, new int[]{coordY, coordX + 1}, listList);
         }
 
         //dead end
@@ -174,7 +182,7 @@ public class Maze {
         printMaze(maze, null);
     }
 
-    private static void printMaze(boolean[][] maze, List<Point> way) {
+    private static void printMaze(boolean[][] maze, List<int[]> way) {
         for (int i = -1; i <= maze.length; i++) {
             //print exterior walls (top and bottom)
             if (i == -1 || i == maze.length) {
@@ -191,7 +199,7 @@ public class Maze {
         }
     }
 
-    private static void printInternalMaze(boolean[][] maze, int line, List<Point> way) {
+    private static void printInternalMaze(boolean[][] maze, int line, List<int[]> way) {
         for (int j = 0; j < maze[line].length; j++) {
             if (!maze[line][j]) {
                 System.out.print(Direction.WALL);
@@ -204,12 +212,12 @@ public class Maze {
                     //print way
                     if (way != null) {
                         for (int k = 0; k < way.size(); k++) {
-                            if (way.get(k).getCoordX() == j && way.get(k).getCoordY() == line) {
-                                if (way.get(k + 1).getCoordX() < j) {
+                            if (way.get(k)[1] == j && way.get(k)[0] == line) {
+                                if (way.get(k + 1)[1] < j) {
                                     System.out.print(Direction.LEFT);
-                                } else if (way.get(k + 1).getCoordX() > j) {
+                                } else if (way.get(k + 1)[1] > j) {
                                     System.out.print(Direction.RIGHT);
-                                } else if (way.get(k + 1).getCoordY() > line) {
+                                } else if (way.get(k + 1)[0] > line) {
                                     System.out.print(Direction.DOWN);
                                 } else {
                                     System.out.print(Direction.UP);
@@ -231,12 +239,12 @@ public class Maze {
         final int sizeX = size[0];
         final int sizeY = size[1];
         boolean[][] maze = new boolean[sizeY][sizeX];
-        List<Point> way = mazeBuilderPath(sizeX, sizeY);
+        List<int[]> way = mazeBuilderPath(sizeX, sizeY);
 
         for (int i = 0; i < sizeY; i++) {
             for (int j = 0; j < sizeX; j++) {
                 for (int k = 0; k < way.size(); k++) {
-                    if (way.get(k).getCoordX() == j && way.get(k).getCoordY() == i) {
+                    if (way.get(k)[1] == j && way.get(k)[0] == i) {
                         maze[i][j] = true;
                         break;
                     }
@@ -248,13 +256,13 @@ public class Maze {
         return maze;
     }
 
-    private static List<Point> mazeBuilderPath(int sizeX, int sizeY) {
+    private static List<int[]> mazeBuilderPath(int sizeX, int sizeY) {
         Random random = new Random();
-        List<Point> way = new ArrayList<>();
+        List<int[]> way = new ArrayList<>();
         int rnd;
         int coordX = 0;
         int coordY = 0;
-        way.add(new Point(coordY, coordX));
+        way.add(new int[]{coordY, coordX});
         while (coordX != sizeX - 1 || coordY != sizeY - 1) {
 
             rnd = random.nextInt(1, 11);
@@ -270,7 +278,7 @@ public class Maze {
             } else {
                 continue;
             }
-            way.add(new Point(coordY, coordX));
+            way.add(new int[]{coordY, coordX});
         }
         return way;
     }
@@ -294,43 +302,5 @@ enum Direction {
     @Override
     public String toString() {
         return String.valueOf(direction);
-    }
-}
-
-class Point {
-    private final int coordX;
-    private final int coordY;
-
-    Point(int coordY, int coordX) {
-        this.coordX = coordX;
-        this.coordY = coordY;
-    }
-
-    int getCoordX() {
-        return coordX;
-    }
-
-    int getCoordY() {
-        return coordY;
-    }
-
-    @Override
-    public String toString() {
-        return "(" + coordY +
-                ", " + coordX +
-                ")";
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Point point = (Point) o;
-        return coordX == point.coordX && coordY == point.coordY;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(coordX, coordY);
     }
 }
