@@ -16,7 +16,7 @@ public class Maze {
 
         if (maze.length * maze[0].length > 50) {
             List<int[]> way = mazeRunnerWithWave(maze);
-            System.out.println("Shortest way (" + way.size() + " steps): ");
+            System.out.println("Shortest way (" + (way.size()-1) + " steps): ");
             printMaze(maze, way);
         } else {
             List<List<int[]>> allWays = mazeRunner(maze);
@@ -29,7 +29,7 @@ public class Maze {
                     minIndex = i;
                 }
             }
-            System.out.println("Shortest way (" + min + " steps): ");
+            System.out.println("Shortest way (" + (min-1) + " steps): ");
             for (int[] i : allWays.get(minIndex)) {
                 System.out.print(Arrays.toString(i));
             }
