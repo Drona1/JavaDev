@@ -5,9 +5,7 @@ package javaStart.homework2.advanced;
 // однако пропущено одно число. Метод должен вернуть это число.
 
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class MissingNumber {
     public static void main(String[] args) {
@@ -19,13 +17,15 @@ public class MissingNumber {
     }
 
     private static int arrayLengthQuery() {
-        Scanner sc = new Scanner(System.in);
-        int input;
-        System.out.println("Введіть розмір випадкового масиву (не менше 3): ");
-        do {
-            input = sc.nextInt();
-        } while (input < 3);
-        return input;
+
+        try(Scanner sc = new Scanner(System.in)){
+            int input;
+            System.out.println("Введіть розмір випадкового масиву (не менше 3): ");
+            do {
+                input = sc.nextInt();
+            } while (input < 3);
+            return input;
+        }
     }
 
     private static int[] createArray(int length) {

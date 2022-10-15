@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac9672ff-fc6d-4d68-9dc5-cc666f6b64cf" name="Changes" comment="Homework3" />
+    <list default="true" id="ac9672ff-fc6d-4d68-9dc5-cc666f6b64cf" name="Changes" comment="Homework3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/Alphabet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/ControlFlowStatements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/MultipleOfFive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/TipTop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/findEntrance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/findMinimum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javaStart/homework4/findSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/MissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/MissingNumber.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +31,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="572be210-4e94-4429-95a9-a1a09154a39c" />
+        <option name="url" value="https://github.com/Drona1/JavaDev.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://C:/Program Files/Java/jdk-19/lib/src.zip!/java.base/java/lang/ArrayIndexOutOfBoundsException.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,51 +52,29 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "proofread"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Maze">
-    <configuration name="CharSymbols" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CharSymbols" />
-      <module name="JavaDev" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.javaStart.homework2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DataTypes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework2.DataTypes" />
-      <module name="JavaDev" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.javaStart.homework2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.test">
     <configuration name="Maze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaStart.homework2.advanced.Maze" />
       <module name="JavaDev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="javaStart.homework2.advanced.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +82,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VariablesAndLogicalOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework3.VariablesAndLogicalOperations" />
+    <configuration name="MultipleOfFive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework4.MultipleOfFive" />
       <module name="JavaDev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.javaStart.homework3.*" />
+          <option name="PATTERN" value="org.javaStart.homework4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TipTop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework4.TipTop" />
+      <module name="JavaDev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.javaStart.homework4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="findSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework4.findSum" />
+      <module name="JavaDev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.javaStart.homework4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Maze" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.CharSymbols" />
-        <item itemvalue="Application.VariablesAndLogicalOperations" />
-        <item itemvalue="Application.DataTypes" />
+        <item itemvalue="Application.Maze" />
+        <item itemvalue="Application.TipTop" />
+        <item itemvalue="Application.MultipleOfFive" />
+        <item itemvalue="Application.findSum" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665645716541</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Homework3">
+      <created>1665645830109</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665645830109</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
