@@ -19,10 +19,17 @@ public class MissingNumber {
     private static int arrayLengthQuery() {
 
         try(Scanner sc = new Scanner(System.in)){
-            int input;
+            int input=0;
             System.out.println("Введіть розмір випадкового масиву (не менше 3): ");
             do {
-                input = sc.nextInt();
+                if(sc.hasNextInt()) {
+                    input = sc.nextInt();
+                    if (input<3)
+                        System.out.println("Помилка. Розмір масиву має становити не мене 3, спробуйте ще раз");
+                }else{
+                    System.out.println("Помилка. Введені дані - не цілочиселне число, спробуйте ще раз.");
+                    sc.next();
+                }
             } while (input < 3);
             return input;
         }

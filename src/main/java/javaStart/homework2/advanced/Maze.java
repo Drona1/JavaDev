@@ -9,6 +9,15 @@ package javaStart.homework2.advanced;
 import java.util.*;
 
 public class Maze {
+    public static final char WALL = '\uE73B';
+    public static final char EMPTY = '\uE739';
+    public static final char START = '\uE726';
+    public static final char FINISH = '\uE735';
+    public static final char UP = '\uE74A';
+    public static final char DOWN = '\uE74B';
+    public static final char LEFT = '\uE72B';
+    public static final char RIGHT = '\uE72A';
+
     public static void main(String[] args) {
 
         boolean[][] maze = mazeBuilder(mazeSizeQuery());
@@ -16,7 +25,7 @@ public class Maze {
 
         if (maze.length * maze[0].length > 50) {
             List<int[]> way = mazeRunnerWithWave(maze);
-            System.out.println("Shortest way (" + (way.size()-1) + " steps): ");
+            System.out.println("Shortest way (" + (way.size() - 1) + " steps): ");
             printMaze(maze, way);
         } else {
             List<List<int[]>> allWays = mazeRunner(maze);
@@ -29,7 +38,7 @@ public class Maze {
                     minIndex = i;
                 }
             }
-            System.out.println("Shortest way (" + (min-1) + " steps): ");
+            System.out.println("Shortest way (" + (min - 1) + " steps): ");
             for (int[] i : allWays.get(minIndex)) {
                 System.out.print(Arrays.toString(i));
             }
@@ -58,12 +67,13 @@ public class Maze {
                         "(2 numbers separated by commas, recommended: 5,5):");
                 input = scanner.nextLine().split(",");
             } while (input.length != 2);
+            scanner.close();
             int[] size = new int[2];
             try {
                 size[0] = Integer.parseInt(input[0].trim());
                 size[1] = Integer.parseInt(input[1].trim());
             } catch (NumberFormatException e) {
-                System.out.println("Data entry error, maze size will be 5x5");
+                System.out.println("Wrong data");
             }
             if (size[0] == 0 || size[1] == 0) {
                 System.out.println("Data entry error, maze size will be 5x5");
@@ -126,10 +136,10 @@ public class Maze {
                                 if (!flag) flag = true;
                             }
                         }
-                    }
-                    if (counter == 1) {
-                        x = sizeX;
-                        y = sizeY;
+                        if (counter == 1) {
+                            x = sizeX;
+                            y = sizeY;
+                        }
                     }
                 }
             }
@@ -187,48 +197,48 @@ public class Maze {
             //print exterior walls (top and bottom)
             if (i == -1 || i == maze.length) {
                 for (int j = 0; j < maze[0].length + 2; j++) {
-                    System.out.print(Direction.WALL);
+                    System.out.print(WALL);
                 }
                 System.out.println();
                 continue;
             }
 
-            System.out.print(Direction.WALL); //print exterior wall (left)
+            System.out.print(WALL); //print exterior wall (left)
             printInternalMaze(maze, i, way);
-            System.out.println(Direction.WALL); //print exterior wall (right)
+            System.out.println(WALL); //print exterior wall (right)
         }
     }
 
-    private static void printInternalMaze(boolean[][] maze, int line, List<int[]> way) {
-        for (int j = 0; j < maze[line].length; j++) {
-            if (!maze[line][j]) {
-                System.out.print(Direction.WALL);
+    private static void printInternalMaze(boolean[][] maze, int y, List<int[]> way) {
+        for (int j = 0; j < maze[y].length; j++) {
+            if (!maze[y][j]) {
+                System.out.print(WALL);
             } else {
-                if (line == 0 && j == 0) {
-                    System.out.print(Direction.START);
-                } else if (line == maze.length - 1 && j == maze[line].length - 1) {
-                    System.out.print(Direction.FINISH);
+                if (y == 0 && j == 0) {
+                    System.out.print(START);
+                } else if (y == maze.length - 1 && j == maze[y].length - 1) {
+                    System.out.print(FINISH);
                 } else {
                     //print way
                     if (way != null) {
                         for (int k = 0; k < way.size(); k++) {
-                            if (way.get(k)[1] == j && way.get(k)[0] == line) {
+                            if (way.get(k)[1] == j && way.get(k)[0] == y) {
                                 if (way.get(k + 1)[1] < j) {
-                                    System.out.print(Direction.LEFT);
+                                    System.out.print(LEFT);
                                 } else if (way.get(k + 1)[1] > j) {
-                                    System.out.print(Direction.RIGHT);
-                                } else if (way.get(k + 1)[0] > line) {
-                                    System.out.print(Direction.DOWN);
+                                    System.out.print(RIGHT);
+                                } else if (way.get(k + 1)[0] > y) {
+                                    System.out.print(DOWN);
                                 } else {
-                                    System.out.print(Direction.UP);
+                                    System.out.print(UP);
                                 }
                                 break;
                             }
                             if (k == way.size() - 1)
-                                System.out.print(Direction.EMPTY);
+                                System.out.print(EMPTY);
                         }
                     } else
-                        System.out.print(Direction.EMPTY);
+                        System.out.print(EMPTY);
                 }
             }
         }
@@ -284,23 +294,3 @@ public class Maze {
     }
 }
 
-enum Direction {
-    WALL('\uE73B'),
-    EMPTY('\uE739'),
-    START('\uE726'),
-    FINISH('\uE735'),
-    UP('\uE74A'),
-    DOWN('\uE74B'),
-    LEFT('\uE72B'),
-    RIGHT('\uE72A');
-    private final char direction;
-
-    Direction(char direction) {
-        this.direction = direction;
-    }
-
-    @Override
-    public String toString() {
-        return String.valueOf(direction);
-    }
-}
