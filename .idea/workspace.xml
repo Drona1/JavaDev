@@ -4,15 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac9672ff-fc6d-4d68-9dc5-cc666f6b64cf" name="Changes" comment="changed class Point to int []" />
+    <list default="true" id="ac9672ff-fc6d-4d68-9dc5-cc666f6b64cf" name="Changes" comment="homework6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/CheckForInclusionInTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/HappyTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/AreaOfTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/AreaOfTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/CheckForInclusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/CheckForInclusionInCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/CheckForTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/CheckForTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/FindApartament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/FindApartament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/FindCircumference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/FindCircumference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/HexConverterACDC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/HexConverterACDC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/LeapYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/LeapYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/MaxNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/MaxNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/SeparationOfNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/SeparationOfNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/EncodingText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/EncodingText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/MissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/MissingNumber.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+      <option value="directory" />
+    </option>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -56,7 +79,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -64,13 +87,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TriangleCreatedBySymbols">
-    <configuration name="CyrilicSymbols" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework5.CyrilicSymbols" />
+  <component name="RunManager" selected="Application.test">
+    <configuration name="CharactersFrequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework6.CharactersFrequency" />
       <module name="JavaDev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.javaStart.homework5.*" />
+          <option name="PATTERN" value="org.javaStart.homework6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IterationsInLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework5.IterationsInLoops" />
+    <configuration name="CharactersStatistics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework6.CharactersStatistics" />
       <module name="JavaDev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.javaStart.homework5.*" />
+          <option name="PATTERN" value="org.javaStart.homework6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiplicationTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework5.MultiplicationTable" />
+    <configuration name="CheckForInclusionInTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaStart.additionally.CheckForInclusionInTriangle" />
       <module name="JavaDev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.javaStart.homework5.*" />
+          <option name="PATTERN" value="javaStart.additionally.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiplicationTableCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework5.MultiplicationTableCalculator" />
+    <configuration name="CheckForTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaStart.additionally.CheckForTriangle" />
       <module name="JavaDev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.javaStart.homework5.*" />
+          <option name="PATTERN" value="javaStart.additionally.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,26 +140,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleCreatedBySymbols" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework5.TriangleCreatedBySymbols" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="JavaDev" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.javaStart.homework5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TriangleCreatedBySymbols" />
-        <item itemvalue="Application.MultiplicationTableCalculator" />
-        <item itemvalue="Application.MultiplicationTable" />
-        <item itemvalue="Application.CyrilicSymbols" />
-        <item itemvalue="Application.IterationsInLoops" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.CharactersFrequency" />
+        <item itemvalue="Application.CharactersStatistics" />
+        <item itemvalue="Application.CheckForInclusionInTriangle" />
+        <item itemvalue="Application.CheckForTriangle" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +229,70 @@
       <option name="project" value="LOCAL" />
       <updated>1666134442646</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Homework5">
+      <created>1666134512803</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666134512803</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Homework6">
+      <created>1666306650420</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666306650420</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Additionally tasks">
+      <created>1666307053982</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666307053982</updated>
+    </task>
+    <task id="LOCAL-00013" summary="homework1">
+      <created>1666378359435</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378359435</updated>
+    </task>
+    <task id="LOCAL-00014" summary="homework2">
+      <created>1666378378410</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378378410</updated>
+    </task>
+    <task id="LOCAL-00015" summary="homework3">
+      <created>1666378415585</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378415585</updated>
+    </task>
+    <task id="LOCAL-00016" summary="homework4">
+      <created>1666378430923</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378430923</updated>
+    </task>
+    <task id="LOCAL-00017" summary="homework5">
+      <created>1666378481428</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378481428</updated>
+    </task>
+    <task id="LOCAL-00018" summary="homework6">
+      <created>1666378511449</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378511449</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +300,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -230,6 +322,19 @@
     <MESSAGE value="Homework2" />
     <MESSAGE value="Homework3" />
     <MESSAGE value="changed class Point to int []" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed class Point to int []" />
+    <MESSAGE value="Homework5" />
+    <MESSAGE value="Homework6" />
+    <MESSAGE value="Additionally tasks" />
+    <MESSAGE value="homework1" />
+    <MESSAGE value="homework2" />
+    <MESSAGE value="homework3" />
+    <MESSAGE value="homework4" />
+    <MESSAGE value="homework5" />
+    <MESSAGE value="homework6" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework6" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
