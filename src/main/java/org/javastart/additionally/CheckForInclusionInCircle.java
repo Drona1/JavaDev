@@ -1,4 +1,4 @@
-package javaStart.additionally;
+package org.javastart.additionally;
 //1) Есть круг с центром в начале координат и радиусом 4. Пользователь
 //вводит с клавиатуры координаты точки x и y. Написать программу которая
 //определит лежит ли эта точка внутри круга или нет.
@@ -6,7 +6,7 @@ package javaStart.additionally;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class CheckForInclusion {
+public class CheckForInclusionInCircle {
     public static void main(String[] args) {
         double x = 0;
         double y = 0;

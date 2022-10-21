@@ -1,4 +1,4 @@
-package javaStart.additionally;
+package org.javastart.additionally;
 //3)Написать программу которая вычислит и выведет на экран
 //длину окружности, если ее радиус считывается с клавиатуры.
 

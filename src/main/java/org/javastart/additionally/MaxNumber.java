@@ -1,4 +1,4 @@
-package javaStart.additionally;
+package org.javastart.additionally;
 //1) Написать программу которая считает 4 числа c клавиатуры и выведет на
 //экран самое большое из них.
 

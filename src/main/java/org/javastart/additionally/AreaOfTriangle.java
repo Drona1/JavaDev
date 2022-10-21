@@ -1,4 +1,4 @@
-package javaStart.additionally;
+package org.javastart.additionally;
 //2)Написать программу которая вычислит и выведет на экран
 //площадь треугольника если известны его стороны.
 

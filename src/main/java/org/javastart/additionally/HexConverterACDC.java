@@ -1,4 +1,4 @@
-package javaStart.additionally;
+package org.javastart.additionally;
 //Разобраться с 16-й системой исчисления. Узнать какое
 //        число зашифровано в названии группы ACDC
 
