@@ -1,4 +1,4 @@
-package org.javaStart.homework2;
+package org.javastart.homework2;
 
 public class DataTypes {
     public static void main(String[] args) {
