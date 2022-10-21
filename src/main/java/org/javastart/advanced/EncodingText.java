@@ -1,4 +1,4 @@
-package javaStart.homework2.advanced;
+package org.javastart.advanced;
 
 // Написать метод, который принимает на вход char[] с текстом
 // и энкодирует его в url-совместимый синтаксис

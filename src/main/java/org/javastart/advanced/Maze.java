@@ -1,4 +1,4 @@
-package javaStart.homework2.advanced;
+package org.javastart.advanced;
 
 //Написать метод, который принимает на вход boolean[][] - игровое поле,
 // где есть свободные поля, а есть занятые клетки.
