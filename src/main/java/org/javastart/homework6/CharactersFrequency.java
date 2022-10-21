@@ -1,4 +1,4 @@
-package org.javaStart.homework6;
+package org.javastart.homework6;
 //1. Прочитать строку из пользовательского ввода и вернуть
 // на консоль кол-во повторений символа 'n' в этой строке.
 
