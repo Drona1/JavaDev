@@ -11,7 +11,7 @@ public class CheckForTriangle {
     public static void main(String[] args) {
         double [] sides = new double[3];
         try(Scanner scanner = new Scanner(System.in).useLocale(Locale.ENGLISH)){
-            System.out.println("Enter three sides of the triangle:");
+            System.out.println("Enter three sides of the triangle and press Enter");
             int counter = 0;
             double side ;
             do {
@@ -20,7 +20,7 @@ public class CheckForTriangle {
                     if (side>0){
                         sides[counter++] = side;
                     }else{
-                        System.out.println("Wrong data, sides must be positive");
+                        System.out.println("Wrong data, sides must be positive, enter new side");
                     }
                 } else{
                     System.out.println("Wrong data, try again");

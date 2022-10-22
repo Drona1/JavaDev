@@ -15,13 +15,13 @@ public class SeparationOfNumber {
     public static void main(String[] args) {
         int number = 0;
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Enter a five-digit number:");
+            System.out.println("Enter a five-digit number and press Enter");
             do {
                 if (scanner.hasNextInt()) {
                     number = scanner.nextInt();
                     if (number / 10000 == 0 || number / 100000 > 0) {
                         number = 0;
-                        System.out.println("The number must be five digits");
+                        System.out.println("The number must be five digits, enter new number");
                     }
                 } else {
                     System.out.println("Wrong data, try again");

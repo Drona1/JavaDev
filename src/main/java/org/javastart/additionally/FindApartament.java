@@ -11,7 +11,7 @@ public class FindApartament {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int apartment = 0;
-            System.out.println("Enter apartment number: ");
+            System.out.println("Enter apartment number and press Enter ");
             do {
                 if (scanner.hasNextInt()) {
                     apartment = scanner.nextInt();

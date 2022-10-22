@@ -9,12 +9,12 @@ public class FindCircumference {
     public static void main(String[] args) {
         double radius = 0;
         try (Scanner scanner = new Scanner(System.in).useLocale(Locale.ENGLISH)) {
-            System.out.println("Enter radius of the circle:");
+            System.out.println("Enter radius of the circle and press Enter");
             do {
                 if (scanner.hasNextDouble()) {
                     radius = scanner.nextDouble();
                     if (radius <= 0) {
-                        System.out.println("Wrong data, radius must be positive");
+                        System.out.println("Wrong data, radius must be positive, enter new radius");
                     }
                 } else {
                     System.out.println("Wrong data, try again");

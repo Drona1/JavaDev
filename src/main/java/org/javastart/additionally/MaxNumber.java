@@ -10,7 +10,7 @@ public class MaxNumber {
         double [] numbers = new double[4];
         int counter =0;
         try(Scanner scanner = new Scanner(System.in).useLocale(Locale.ENGLISH)){
-            System.out.println("Enter four numbers:");
+            System.out.println("Enter four numbers and press Enter");
             do {
                 if (scanner.hasNextDouble()){
                     numbers[counter++]=scanner.nextDouble();
@@ -22,8 +22,9 @@ public class MaxNumber {
 
             double max = numbers[0];
             for (int i = 1; i <numbers.length ; i++) {
-                if(numbers[i]>max)
-                    max=numbers[i];
+                if(numbers[i]>max) {
+                    max = numbers[i];
+                }
             }
             System.out.println("Max value is: "+max);
 
