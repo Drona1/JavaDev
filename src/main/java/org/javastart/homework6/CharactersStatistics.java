@@ -19,8 +19,9 @@ public class CharactersStatistics {
                 for (int i = 0; i < text.length(); i++) {
                     character = text.charAt(i);
 
-                    if (character == ' ') continue;
-
+                    if (character == ' ') {
+                        continue;
+                    }
                     if (text.charAt(i) > 'z' || text.charAt(i) < 'a') {
                         System.out.println("Wrong text." +
                                 " You must use only lowercase latin letters");
@@ -41,16 +42,18 @@ public class CharactersStatistics {
             do {
                 if (start < text.length()) {
                     start = text.indexOf(character, start) + 1;
-                    if (start != 0)
+                    if (start != 0) {
                         counter++;
+                    }
                 } else {
                     break;
                 }
             } while (start != 0);
             System.out.println("   '" + character + "'          " + counter);
 
-            if (character == ' ')
+            if (character == ' ') {
                 character = 'a' - 1;
+            }
         }
     }
 }

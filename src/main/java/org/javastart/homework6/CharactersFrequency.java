@@ -32,8 +32,9 @@ public class CharactersFrequency {
                 do {
                     if (start < text.length()) {
                         start = text.indexOf(character, start) + 1;
-                        if (start != 0)
+                        if (start != 0) {
                             counter++;
+                        }
                     } else {
                         break;
                     }
