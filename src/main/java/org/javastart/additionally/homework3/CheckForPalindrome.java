@@ -1,4 +1,4 @@
-package org.javastart.additionally;
+package org.javastart.additionally.homework3;
 /*
 4) С клавиатуры вводиться шестизначное число. Проверить, является ли
 оно палиндромом. Примечание: палиндромом называется число, слово

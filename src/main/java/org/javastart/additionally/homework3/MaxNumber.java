@@ -1,4 +1,4 @@
-package org.javastart.additionally;
+package org.javastart.additionally.homework3;
 //1) Написать программу которая считает 4 числа c клавиатуры и выведет на
 //экран самое большое из них.
 

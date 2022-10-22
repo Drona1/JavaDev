@@ -1,4 +1,4 @@
-package org.javastart.additionally;
+package org.javastart.additionally.homework2;
 //1) Написать программу которая считывает 5-и значное число с
 //клавиатуры и выводит цифры из которого оно состоит.
 //Например : Считывается число 54698
