@@ -15,7 +15,8 @@ public class VariablesAndLogicalOperations {
         double pdtDouble = 4.56;
         char pdtChar = '\u263A';
 
-        System.out.println("\nExamples of Primitive Data Types:");
+        System.out.println();
+        System.out.println("Examples of Primitive Data Types:");
         System.out.println("boolean: " + pdtBoolean);
         System.out.println("byte: " + pdtByte);
         System.out.println("short: " + pdtShort);
@@ -31,7 +32,7 @@ public class VariablesAndLogicalOperations {
 //        2.2 вывести их произведение на консоль.
 //        2.3 вывести true, если 1 переменная больше, чем 2, иначе false.
 //        2.4 вывести true, если 1 переменная больше, чем сумма 2 и 3, иначе false.
-        System.out.println("\nExamples of math and logical operation:");
+        System.out.println("Examples of math and logical operation:");
         System.out.println("First variable (byte): " + pdtByte);
         System.out.println("Second variable (short): " + pdtShort);
         System.out.println("Thirst variable (int): " + pdtInt);
