@@ -27,8 +27,15 @@ public class HappyTicket {
                 }
             } while (ticket == 0);
         }
-        if (ticket / 1000 + ticket % 1000 / 100 ==
-                ticket % 100 / 10 + ticket % 10) {
+        int first = ticket / 1000 + ticket % 1000 / 100;
+        if (first / 10 != 0) {
+            first = 1 + first % 10;
+        }
+        int second = ticket % 100 / 10 + ticket % 10;
+        if (second / 10 != 0) {
+            second = 1 + second % 10;
+        }
+        if (first == second) {
             System.out.println("Wow, happy ticket!");
         } else {
             System.out.println("Don't worry, better luck next time");
