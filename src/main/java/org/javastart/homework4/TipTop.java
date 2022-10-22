@@ -7,10 +7,11 @@ public class TipTop {
 // (в итоге комбинация "Tip" "Top" повторится 50 раз).
 // * Печатать "Tip" и "Top" в разных повторах цикла.
         for (int i = 0; i < 100; i++) {
-            if (i%2==0)
-                System.out.print(i/2+1+")Tip ");
-            else
+            if (i % 2 == 0) {
+                System.out.print(i / 2 + 1 + ")Tip ");
+            } else {
                 System.out.println("Top");
+            }
         }
     }
 }

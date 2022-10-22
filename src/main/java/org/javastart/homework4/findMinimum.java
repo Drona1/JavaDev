@@ -11,10 +11,12 @@ public class findMinimum {
 
         int max = first;
 
-        if (second > max)
+        if (second > max) {
             max = second;
-        if (third > max)
+        }
+        if (third > max) {
             max = third;
+        }
         System.out.println("There are tree numbers: "
                 + first + ", " + second + ", " + third);
         System.out.println("Maximum value is " + max);
