@@ -28,9 +28,9 @@ public class CheckForTriangle {
                 }
             }while (counter<3);
         }
-        if (sides[0] + sides[1] > sides[2] &&
-                sides[1] + sides[2] > sides[0] &&
-                sides[0] + sides[2] > sides[1]) {
+        if (sides[0] + sides[1] >= sides[2] &&
+                sides[1] + sides[2] >= sides[0] &&
+                sides[0] + sides[2] >= sides[1]) {
             System.out.println("With such sides there can be a triangle");
         } else {
             System.out.println("A triangle cannot exist with such sides");
