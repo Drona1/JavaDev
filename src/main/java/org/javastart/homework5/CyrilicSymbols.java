@@ -23,8 +23,9 @@ public class CyrilicSymbols {
 
         for (char c : symbols) {
             System.out.print(c + " ");
-            if (c == 'Я' || c == 'я')
+            if (c == 'Я' || c == 'я') {
                 System.out.println();
+            }
         }
     }
 }

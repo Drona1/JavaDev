@@ -17,8 +17,9 @@ public class TriangleCreatedBySymbols {
         do {
             if (scanner.hasNextInt()) {
                 height = scanner.nextInt();
-                if(height<=0)
+                if(height<=0) {
                     System.out.println("Wrong data, try again.");
+                }
             } else {
                 System.out.println("Wrong data, try again.");
                 scanner.nextLine();

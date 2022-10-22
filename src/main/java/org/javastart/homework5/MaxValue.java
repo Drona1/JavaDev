@@ -25,8 +25,9 @@ public class MaxValue {
 
         int max = array[0];
         for (int i = 1; i<array.length; i++){
-            if (array[i]>max)
-                max=array[i];
+            if (array[i]>max) {
+                max = array[i];
+            }
         }
         System.out.println("Array: " + Arrays.toString(array));
         System.out.println("Max value: "+ max);
