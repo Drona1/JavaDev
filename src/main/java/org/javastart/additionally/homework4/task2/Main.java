@@ -1,13 +1,17 @@
-package org.javastart.additionally.homework4;
-//2) Вычислить с помощью цикла факториал числа - n введенного с
-//клавиатуры (4<n<16). Факториал числа это произведение всех чисел от
-//этого числа до 1. Например 5! = 5*4*3*2*1=120
+/*
+ * 2) Вычислить с помощью цикла факториал числа - n введенного с
+ * клавиатуры (4<n<16). Факториал числа это произведение всех чисел от
+ * этого числа до 1. Например 5! = 5*4*3*2*1=120
+ */
+
+package org.javastart.additionally.homework4.task2;
 
 import java.util.Scanner;
 
-public class CalculateFactorial {
+public class Main {
     public static void main(String[] args) {
         int number = 0;
+
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Enter a number between 5 and 15 to calculate" +
                     " the  factorial and press Enter");
@@ -26,7 +30,9 @@ public class CalculateFactorial {
 
             } while (number == 0);
         }
+
         long result = 1;
+
         for (int i = 1; i <= number; i++) {
             result = result * i;
         }
