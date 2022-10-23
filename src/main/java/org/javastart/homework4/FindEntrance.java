@@ -2,7 +2,7 @@ package org.javastart.homework4;
 
 import java.util.Scanner;
 
-public class findEntrance {
+public class FindEntrance {
     public static void main(String[] args) {
 //1.1 В первом подъезде квартиры с 1 по 20. Во втором с 21 по 48.
 // В третьем с 49 по 90. Пользователь вводит номер квартиры.

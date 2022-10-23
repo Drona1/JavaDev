@@ -1,6 +1,6 @@
 package org.javastart.homework4;
 
-public class findMinimum {
+public class FindMinimum {
     public static void main(String[] args) {
 //1. Написать программу, которая имея три переменные типа инт с разными
 // значениями выводит на консоль максимальное из них
