@@ -58,5 +58,8 @@ public class Main {
 
             }
         }
+        if(!text.contains("n")){
+            System.out.println("Character 'n' is not contained in this text");
+        }
     }
 }
