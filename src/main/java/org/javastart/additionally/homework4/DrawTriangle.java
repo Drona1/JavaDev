@@ -9,7 +9,7 @@ package org.javastart.additionally.homework4;
 
 import java.util.Scanner;
 
-public class PaintTriangle {
+public class DrawTriangle {
     public static void main(String[] args) {
         int counter = 0;
         int height=0;
