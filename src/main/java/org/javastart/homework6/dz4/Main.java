@@ -1,17 +1,21 @@
-package org.javastart.homework6;
-//4. Прочитать строку из пользовательского ввода и вернуть
-// пользователю статистику о том, сколько раз встречался каждый
-// из символов(пользователь может вводить только алфавитные
-// латинские символы, lowercase)
+/*
+ * 4. Прочитать строку из пользовательского ввода и вернуть
+ * пользователю статистику о том, сколько раз встречался каждый из символов
+ * (пользователь может вводить только алфавитные
+ * латинские символы, lowercase)
+ */
+package org.javastart.homework6.dz4;
 
 import java.util.Scanner;
 
-public class CharactersStatistics {
+public class Main {
     public static void main(String[] args) {
         String text;
+
         try (Scanner scanner = new Scanner(System.in)) {
             boolean flag;
             char character;
+
             System.out.println("Enter text (use only lowercase latin letters):");
             do {
                 flag = false;
@@ -22,6 +26,7 @@ public class CharactersStatistics {
                     if (character == ' ') {
                         continue;
                     }
+
                     if (text.charAt(i) > 'z' || text.charAt(i) < 'a') {
                         System.out.println("Wrong text." +
                                 " You must use only lowercase latin letters");
@@ -34,6 +39,7 @@ public class CharactersStatistics {
 
         int start;
         int counter;
+
         System.out.println("Statistics");
         System.out.println("Character:   Frequency:");
         for (char character = ' '; character <= 'z'; character++) {

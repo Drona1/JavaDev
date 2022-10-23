@@ -1,29 +1,33 @@
-package org.javastart.homework6;
-//1. Прочитать строку из пользовательского ввода и вернуть
-// на консоль кол-во повторений символа 'n' в этой строке.
-
-//2. Прочитать строку из пользовательского ввода и сохранить
-// в массив все позиции символа 'n' в этой строке.
-// abcaabca, a -> [0,3,4,7]
-
-//4. Прочитать строку из пользовательского ввода и вернуть
-// пользователю статистику о том, сколько раз встречался каждый
-// из символов(пользователь может вводить только алфавитные
-// латинские символы, lowercase)
+/*
+ * 1. Прочитать строку из пользовательского ввода и вернуть
+ * на консоль кол-во повторений символа 'n' в этой строке.
+ *
+ * 2. Прочитать строку из пользовательского ввода и сохранить
+ * в массив все позиции символа 'n' в этой строке.
+ * abcaabca, a -> [0,3,4,7]
+ *
+ * 4. Прочитать строку из пользовательского ввода и вернуть
+ * пользователю статистику о том, сколько раз встречался каждый
+ * из символов(пользователь может вводить только алфавитные
+ * латинские символы, lowercase)
+ */
+package org.javastart.homework6.dz12;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CharactersFrequency {
+public class Main {
     public static void main(String[] args) {
         String text;
-        try(Scanner scanner = new Scanner(System.in)){
+
+        try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Enter text:");
             text = scanner.nextLine();
         }
         char character;
         int start;
         int counter;
+
         for (int i = 0; i < text.length(); i++) {
             character = text.charAt(i);
             if (text.indexOf(character) == i) {
@@ -44,9 +48,10 @@ public class CharactersFrequency {
 
                 //second task
                 int[] array = new int[counter];
-                start=-1;
+
+                start = -1;
                 for (int j = 0; j < counter; j++) {
-                    start = text.indexOf(character, start+1);
+                    start = text.indexOf(character, start + 1);
                     array[j] = start;
                 }
                 System.out.println(Arrays.toString(array));
