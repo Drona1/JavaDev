@@ -2,7 +2,7 @@
 * 3. Написать программу, которая читает два числа из пользовательского
 * ввода и возводит первое число в степень второго числа.
 */
-package org.javastart.homework6.dz3;
+package org.javastart.homework6.task3;
 
 import java.util.Locale;
 import java.util.Scanner;

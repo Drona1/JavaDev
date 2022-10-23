@@ -4,7 +4,7 @@
  * (пользователь может вводить только алфавитные
  * латинские символы, lowercase)
  */
-package org.javastart.homework6.dz4;
+package org.javastart.homework6.task4;
 
 import java.util.Scanner;
 

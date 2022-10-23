@@ -11,7 +11,7 @@
  * из символов(пользователь может вводить только алфавитные
  * латинские символы, lowercase)
  */
-package org.javastart.homework6.dz12;
+package org.javastart.homework6.task12;
 
 import java.util.Arrays;
 import java.util.Scanner;
