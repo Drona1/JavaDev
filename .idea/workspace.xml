@@ -4,22 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac9672ff-fc6d-4d68-9dc5-cc666f6b64cf" name="Changes" comment="homework6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/CheckForInclusionInTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/HappyTicket.java" afterDir="false" />
+    <list default="true" id="ac9672ff-fc6d-4d68-9dc5-cc666f6b64cf" name="Changes" comment="Homework7">
+      <change afterPath="$PROJECT_DIR$/src/main/java/TableTextServiceArray.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework5/level2/task1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework5/level2/task2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework5/level2/task3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework5/task1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework5/task2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework5/task3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework5/task4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/AreaOfTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/AreaOfTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/CheckForInclusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/CheckForInclusionInCircle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/CheckForTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/CheckForTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/FindApartament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/FindApartament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/FindCircumference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/FindCircumference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/HexConverterACDC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/HexConverterACDC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/LeapYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/LeapYear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/MaxNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/MaxNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/additionally/SeparationOfNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/SeparationOfNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/EncodingText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/EncodingText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaStart/homework2/advanced/MissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/MissingNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework3/LeapYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework3/LeapYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/level2/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/level2/task1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/level2/task3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/level2/task3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/task1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/task4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/task4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/EncodingText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/EncodingText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/advanced/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javastart/homework7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javastart/homework7/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,14 +32,15 @@
   </component>
   <component name="ChangesViewManager">
     <option name="groupingKeys">
-      <option value="module" />
       <option value="directory" />
+      <option value="module" />
     </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -65,35 +70,46 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Fm7MeZFhFT2CNNyhYvSO7Nwx6X" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Java_projects/JavaDev",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
-    <configuration name="CharactersFrequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework6.CharactersFrequency" />
+  <component name="RunManager" selected="Application.Test2">
+    <configuration name="CharSymbols" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CharSymbols" />
+      <module name="JavaDev" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.javastart.homework7.Main" />
       <module name="JavaDev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.javaStart.homework6.*" />
+          <option name="PATTERN" value="org.javastart.homework7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +117,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CharactersStatistics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.javaStart.homework6.CharactersStatistics" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="JavaDev" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test2" />
+      <module name="JavaDev" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.javastart.additionally.homework5.level2.task1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.javastart.additionally.homework5.level2.task1.Main" />
       <module name="JavaDev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.javaStart.homework6.*" />
+          <option name="PATTERN" value="org.javastart.additionally.homework5.level2.task1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,46 +144,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckForInclusionInTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaStart.additionally.CheckForInclusionInTriangle" />
-      <module name="JavaDev" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaStart.additionally.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckForTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaStart.additionally.CheckForTriangle" />
-      <module name="JavaDev" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaStart.additionally.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="JavaDev" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.CharSymbols" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.org.javastart.additionally.homework5.level2.task1.Main" />
+      <item itemvalue="Application.Test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.CharactersFrequency" />
-        <item itemvalue="Application.CharactersStatistics" />
-        <item itemvalue="Application.CheckForInclusionInTriangle" />
-        <item itemvalue="Application.CheckForTriangle" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.org.javastart.additionally.homework5.level2.task1.Main" />
+        <item itemvalue="Application.CharSymbols" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +296,154 @@
       <option name="project" value="LOCAL" />
       <updated>1666378511449</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="advanced">
+      <created>1666378570415</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378570415</updated>
+    </task>
+    <task id="LOCAL-00020" summary="additionally">
+      <created>1666378601928</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378601928</updated>
+    </task>
+    <task id="LOCAL-00021" summary="work">
+      <created>1666378642279</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666378642279</updated>
+    </task>
+    <task id="LOCAL-00022" summary="homework2">
+      <created>1666430561495</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666430561495</updated>
+    </task>
+    <task id="LOCAL-00023" summary="homework3">
+      <created>1666430592611</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1666430592611</updated>
+    </task>
+    <task id="LOCAL-00024" summary="homework4">
+      <created>1666430612023</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666430612023</updated>
+    </task>
+    <task id="LOCAL-00025" summary="homework5">
+      <created>1666430631484</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666430631484</updated>
+    </task>
+    <task id="LOCAL-00026" summary="homework6">
+      <created>1666430645097</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1666430645097</updated>
+    </task>
+    <task id="LOCAL-00027" summary="additionally">
+      <created>1666432193216</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666432193216</updated>
+    </task>
+    <task id="LOCAL-00028" summary="additionally">
+      <created>1666435238448</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1666435238448</updated>
+    </task>
+    <task id="LOCAL-00029" summary="additionally">
+      <created>1666438257841</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666438257841</updated>
+    </task>
+    <task id="LOCAL-00030" summary="additionally">
+      <created>1666458938589</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666458938589</updated>
+    </task>
+    <task id="LOCAL-00031" summary="additionally">
+      <created>1666520745775</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1666520745775</updated>
+    </task>
+    <task id="LOCAL-00032" summary="additionally">
+      <created>1666520887961</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1666520887961</updated>
+    </task>
+    <task id="LOCAL-00033" summary="homework6">
+      <created>1666546698308</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1666546698308</updated>
+    </task>
+    <task id="LOCAL-00034" summary="homework4">
+      <created>1666546974129</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1666546974129</updated>
+    </task>
+    <task id="LOCAL-00035" summary="homework6">
+      <created>1666547403279</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1666547403279</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Additionally homework4">
+      <created>1666547814612</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1666547814612</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Additionally homework4">
+      <created>1666551676279</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1666551676279</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Homework6">
+      <created>1666560748776</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1666560748776</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Homework7">
+      <created>1666649457205</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1666649457205</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,19 +470,39 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Homework2" />
     <MESSAGE value="Homework3" />
     <MESSAGE value="changed class Point to int []" />
     <MESSAGE value="Homework5" />
-    <MESSAGE value="Homework6" />
     <MESSAGE value="Additionally tasks" />
     <MESSAGE value="homework1" />
+    <MESSAGE value="advanced" />
+    <MESSAGE value="work" />
     <MESSAGE value="homework2" />
     <MESSAGE value="homework3" />
-    <MESSAGE value="homework4" />
     <MESSAGE value="homework5" />
+    <MESSAGE value="additionally" />
+    <MESSAGE value="homework4" />
     <MESSAGE value="homework6" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework6" />
+    <MESSAGE value="Additionally homework4" />
+    <MESSAGE value="Homework6" />
+    <MESSAGE value="Homework7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework7" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/task1/Main.java</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/javastart/additionally/homework4/task3/Main.java</url>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
