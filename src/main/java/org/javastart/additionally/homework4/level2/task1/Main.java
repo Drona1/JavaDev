@@ -24,11 +24,16 @@ public class Main {
             do {
                 if (scanner.hasNextInt()) {
                     height = scanner.nextInt();
+                    scanner.nextLine();
+                    if (height <=0){
+                        System.out.println("The height must be positive" +
+                                "enter new height");
+                    }
                 } else {
                     System.out.println("Wrong data, try again");
                     scanner.nextLine();
                 }
-            } while (height == 0);
+            } while (height <= 0);
         }
 
         int counter = 0;

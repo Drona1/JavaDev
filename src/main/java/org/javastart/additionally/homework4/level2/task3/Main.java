@@ -23,15 +23,20 @@ public class Main {
                     width = scanner.nextInt();
                     scanner.nextLine();
                     if (width % 2 == 0) {
-                        System.out.println("Number must be odd," +
+                        System.out.println("The width must be odd," +
                                 " enter new width");
                         width = 0;
+                    }
+
+                    if (width<0) {
+                        System.out.println("The width must be positive" +
+                                "enter new width");
                     }
                 } else {
                     System.out.println("Wrong data, try again");
                     scanner.nextLine();
                 }
-            } while (width == 0);
+            } while (width <= 0);
         }
 
         int increment = 1;

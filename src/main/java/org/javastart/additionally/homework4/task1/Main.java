@@ -21,7 +21,8 @@ public class Main {
                 if (scanner.hasNextInt()) {
                     number = scanner.nextInt();
                     if (number <= 0) {
-                        System.out.println("Number must be positive, enter new number");
+                        System.out.println("Number must be positive," +
+                                " enter new number");
                     }
                 } else {
                     System.out.println("Wrong data, try again");

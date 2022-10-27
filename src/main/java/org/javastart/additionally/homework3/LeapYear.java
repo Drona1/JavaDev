@@ -17,7 +17,8 @@ public class LeapYear {
                 if (scanner.hasNextInt()) {
                     year = scanner.nextInt();
                     if (year<=0) {
-                        System.out.println("Wrong data, year must be positive, enter new year");
+                        System.out.println("Wrong data, year must be positive," +
+                                " enter new year");
                     }else {
                         if ((year % 4 == 0 && year % 100 != 0) ||
                                 (year % 100 == 0 && year % 400 == 0)) {

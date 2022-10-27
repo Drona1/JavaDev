@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int number = 0;
+        long result = 1;
 
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Enter a number between 5 and 15 to calculate" +
@@ -30,8 +31,6 @@ public class Main {
 
             } while (number == 0);
         }
-
-        long result = 1;
 
         for (int i = 1; i <= number; i++) {
             result = result * i;

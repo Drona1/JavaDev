@@ -25,10 +25,21 @@ public class Main {
                     if (counter == 0) {
                         height = scanner.nextInt();
                         scanner.nextLine();
-                        System.out.println("Enter the width of the triangle" +
-                                " and press Enter");
+                        if (height <=0){
+                            System.out.println("The height must be positive," +
+                                    "enter new height");
+                            continue;
+                        }else {
+                            System.out.println("Enter the width of the triangle" +
+                                    " and press Enter");
+                        }
                     } else {
                         width = scanner.nextInt();
+                        if (width<=0){
+                            System.out.println("The width must be positive," +
+                                    "enter new width");
+                            continue;
+                        }
                     }
                     counter++;
                 } else {
