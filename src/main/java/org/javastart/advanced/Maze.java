@@ -1,10 +1,11 @@
+/*
+* Написать метод, который принимает на вход boolean[][] - игровое поле,
+*  где есть свободные поля, а есть занятые клетки.
+* Метод должен провести игрока от верхнего левого угла до нижнего
+* правого и вернуть возможный путь List<>.
+* Все пути<List<List<>>>?
+*/
 package org.javastart.advanced;
-
-//Написать метод, который принимает на вход boolean[][] - игровое поле,
-// где есть свободные поля, а есть занятые клетки.
-// Метод должен провести игрока от верхнего левого угла до нижнего
-// правого и вернуть возможный путь List<>.
-// Все пути<List<List<>>>?
 
 import java.util.*;
 
@@ -25,7 +26,8 @@ public class Maze {
 
         if (maze.length * maze[0].length > 50) {
             List<int[]> way = mazeRunnerWithWave(maze);
-            System.out.println("Shortest way (" + (way.size() - 1) + " steps): ");
+            System.out.println("Shortest way (" + (way.size() - 1)
+                    + " steps): ");
             printMaze(maze, way);
         } else {
             List<List<int[]>> allWays = mazeRunner(maze);
@@ -91,18 +93,19 @@ public class Maze {
         int sizeY = pathOfWave.length;
         int x = sizeX - 1;
         int y = sizeY - 1;
+
         way.add(0, new int[]{y, x});
         do {
 
             for (int i = -1; i <= 1; i += 2) {
-                if (y + i < sizeY && y + i >= 0 &&
-                        pathOfWave[y + i][x] == pathOfWave[y][x] - 1) {
+                if ((((y + i) < sizeY) && ((y + i) >= 0))
+                        && (pathOfWave[y + i][x] == pathOfWave[y][x] - 1)) {
                     y = y + i;
                     way.add(0, new int[]{y, x});
                     break;
                 }
-                if (x + i < sizeX && x + i >= 0 &&
-                        pathOfWave[y][x + i] == pathOfWave[y][x] - 1) {
+                if ((((x + i) < sizeX) && ((x + i) >= 0))
+                        && (pathOfWave[y][x + i] == pathOfWave[y][x] - 1)) {
                     x = x + i;
                     way.add(0, new int[]{y, x});
                     break;
@@ -119,21 +122,28 @@ public class Maze {
         int[][] pathOfWave = new int[sizeY][sizeX];
         int counter = 1;
         boolean flag;
+
         do {
             flag = false;
             for (int y = 0; y < sizeY; y++) {
                 for (int x = 0; x < sizeX; x++) {
                     if (pathOfWave[y][x] == counter - 1) {
                         for (int i = -1; i <= 1; i += 2) {
-                            if (y + i < sizeY && y + i >= 0 &&
-                                    maze[y + i][x] && pathOfWave[y + i][x] == 0) {
+                            if ((((y + i) < sizeY) && ((y + i) >= 0))
+                                    && maze[y + i][x]
+                                    && (pathOfWave[y + i][x] == 0)) {
                                 pathOfWave[y + i][x] = counter;
-                                if (!flag) flag = true;
+                                if (!flag) {
+                                    flag = true;
+                                }
                             }
-                            if (x + i < sizeX && x + i >= 0 &&
-                                    maze[y][x + i] && pathOfWave[y][x + i] == 0) {
+                            if ((((x + i) < sizeX) && ((x + i) >= 0))
+                                    && maze[y][x + i]
+                                    && (pathOfWave[y][x + i] == 0)) {
                                 pathOfWave[y][x + i] = counter;
-                                if (!flag) flag = true;
+                                if (!flag){
+                                    flag = true;
+                                }
                             }
                         }
                         if (counter == 1) {
@@ -169,16 +179,19 @@ public class Maze {
         //mark the path
         maze[coordY][coordX] = false;
 
-        if (coordY - 1 >= 0 && maze[coordY - 1][coordX]) {
+        if (((coordY - 1) >= 0) && maze[coordY - 1][coordX]) {
             movement(way, maze, new int[]{coordY - 1, coordX}, listList);
         }
-        if (coordY + 1 < maze.length && maze[coordY + 1][coordX]) {
+
+        if (((coordY + 1) < maze.length) && maze[coordY + 1][coordX]) {
             movement(way, maze, new int[]{coordY + 1, coordX}, listList);
         }
-        if (coordX - 1 >= 0 && maze[coordY][coordX - 1]) {
+
+        if (((coordX - 1) >= 0) && maze[coordY][coordX - 1]) {
             movement(way, maze, new int[]{coordY, coordX - 1}, listList);
         }
-        if (coordX + 1 < maze[coordY].length && maze[coordY][coordX + 1]) {
+
+        if (((coordX + 1) < maze[coordY].length) && maze[coordY][coordX + 1]) {
             movement(way, maze, new int[]{coordY, coordX + 1}, listList);
         }
 
@@ -214,15 +227,15 @@ public class Maze {
             if (!maze[y][j]) {
                 System.out.print(WALL);
             } else {
-                if (y == 0 && j == 0) {
+                if ((y == 0) && (j == 0)) {
                     System.out.print(START);
-                } else if (y == maze.length - 1 && j == maze[y].length - 1) {
+                } else if ((y == (maze.length - 1)) && (j == (maze[y].length - 1))) {
                     System.out.print(FINISH);
                 } else {
                     //print way
                     if (way != null) {
                         for (int k = 0; k < way.size(); k++) {
-                            if (way.get(k)[1] == j && way.get(k)[0] == y) {
+                            if ((way.get(k)[1] == j) && (way.get(k)[0] == y)) {
                                 if (way.get(k + 1)[1] < j) {
                                     System.out.print(LEFT);
                                 } else if (way.get(k + 1)[1] > j) {
@@ -254,7 +267,7 @@ public class Maze {
         for (int i = 0; i < sizeY; i++) {
             for (int j = 0; j < sizeX; j++) {
                 for (int k = 0; k < way.size(); k++) {
-                    if (way.get(k)[1] == j && way.get(k)[0] == i) {
+                    if ((way.get(k)[1] == j) &&(way.get(k)[0] == i)) {
                         maze[i][j] = true;
                         break;
                     }
@@ -272,16 +285,17 @@ public class Maze {
         int rnd;
         int coordX = 0;
         int coordY = 0;
+
         way.add(new int[]{coordY, coordX});
         while (coordX != sizeX - 1 || coordY != sizeY - 1) {
 
             rnd = random.nextInt(1, 11);
 
-            if (rnd <= 4 && coordX < sizeX - 1) {
+            if ((rnd <= 4) && (coordX < (sizeX - 1))) {
                 coordX++;
-            } else if (rnd <= 8 && coordY < sizeY - 1) {
+            } else if ((rnd <= 8) && (coordY < (sizeY - 1))) {
                 coordY++;
-            } else if (rnd == 9 && coordX > 0) {
+            } else if ((rnd == 9) && (coordX > 0)) {
                 coordX--;
             } else if (coordY > 0) {
                 coordY--;

@@ -45,6 +45,7 @@ public class EncodingText {
 
     private static char[] encodingArray(char[] array) {
         int lastIndex = array.length - 1;
+
         for (int i = 0; i <= lastIndex; i++) {
             if (array[i] == ' ') {
                 for (int j = lastIndex; j > i + 2; j--) {
