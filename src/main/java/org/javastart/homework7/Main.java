@@ -55,7 +55,7 @@ public class Main {
                 + Arrays.toString(arr) + " is: " + aver);
         System.out.println();
 
-        String text = "boo1.24a12312312";
+        String text = "boo124.1d";
         double numDouble = findNumber(text);
         System.out.println("Еhe results of searching for a number" +
                 " in a string \"" + text + "\" is: " + numDouble);
@@ -125,6 +125,9 @@ public class Main {
             } else if (!number.isEmpty()) {
                 return Double.parseDouble(number.toString());
             }
+        }
+        if (!number.isEmpty()){
+            return Double.parseDouble(number.toString());
         }
         return 0;
     }
