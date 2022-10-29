@@ -20,15 +20,13 @@ public class Main {
             System.out.println("Enter the length of the array and press Enter");
             do {
                 if (scanner.hasNextInt()) {
+                    length = scanner.nextInt();
+                    scanner.nextLine();
                     if (length <= 0) {
-                        length = scanner.nextInt();
-                        scanner.nextLine();
-                        if (length <= 0) {
-                            System.out.println("The length must be positive," +
-                                    " enter new length");
-                        } else {
-                            System.out.println("Enter numbers for this array:");
-                        }
+                        System.out.println("The length must be positive," +
+                                " enter new length");
+                    } else {
+                        System.out.println("Enter numbers for this array:");
                     }
                 } else {
                     System.out.println("Wrong data, try again");
