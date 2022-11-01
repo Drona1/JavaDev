@@ -1,15 +1,15 @@
 /*
-* 1) С помощью цикла (только одного) нарисовать такую фигуру. Причем
-* максимальная высота этой фигуры вводиться с клавиатуры (в примере
-* максимальная высота - 4)
-* *
-* **
-* ***
-* ****
-* ***
-* **
-* *
-*/
+ * 1) С помощью цикла (только одного) нарисовать такую фигуру. Причем
+ * максимальная высота этой фигуры вводиться с клавиатуры (в примере
+ * максимальная высота - 4)
+ * *
+ * **
+ * ***
+ * ****
+ * ***
+ * **
+ * *
+ */
 package org.javastart.additionally.homework4.level2.task1;
 
 import java.util.Scanner;
@@ -25,7 +25,7 @@ public class Main {
                 if (scanner.hasNextInt()) {
                     height = scanner.nextInt();
                     scanner.nextLine();
-                    if (height <=0){
+                    if (height <= 0) {
                         System.out.println("The height must be positive" +
                                 "enter new height");
                     }
@@ -36,21 +36,19 @@ public class Main {
             } while (height <= 0);
         }
 
-        int counter = 0;
-        int currentHeight = 1;
-        int increment = 1;
-
-        while (currentHeight > 0) {
-            counter++;
-            System.out.print("*");
-            if (currentHeight == counter) {
+        int count = 1;
+        int currentRow = 1;
+        while (currentRow <= height * 2 - 1) {
+            if ((currentRow <= height && count <= currentRow)
+                    || (currentRow > height && count <= height * 2 - currentRow)) {
+                System.out.print("*");
+                count++;
+            } else {
                 System.out.println();
-                counter = 0;
-                if (currentHeight == height) {
-                    increment = -1;
-                }
-                currentHeight += increment;
+                currentRow++;
+                count = 1;
             }
         }
+
     }
 }

@@ -28,7 +28,7 @@ public class Main {
                         width = 0;
                     }
 
-                    if (width<0) {
+                    if (width < 0) {
                         System.out.println("The width must be positive" +
                                 "enter new width");
                     }
@@ -39,24 +39,16 @@ public class Main {
             } while (width <= 0);
         }
 
-        int increment = 1;
-        int modifier = 0;
-
         for (int i = 1; i <= width; i++) {
             for (int j = 1; j <= width; j++) {
-                if (j <= modifier) {
-                    System.out.print(" ");
-                } else if (j <= (modifier + width - modifier * 2)) {
+                if ((j >= i && j <= width - i + 1)
+                        || (j <= i && j >= width - i + 1)) {
                     System.out.print("*");
-                }else{
+                } else {
                     System.out.print(" ");
                 }
             }
             System.out.println();
-            modifier+=increment;
-            if (modifier == width/2){
-                increment = -1;
-            }
         }
     }
 }

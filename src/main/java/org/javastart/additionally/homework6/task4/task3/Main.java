@@ -4,7 +4,7 @@
  * ширину такого прямоугольника.
  */
 
-package org.javastart.additionally.homework6.task3;
+package org.javastart.additionally.homework6.task4.task3;
 
 import java.util.Scanner;
 
