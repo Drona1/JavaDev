@@ -11,9 +11,9 @@
  * abc cbd -> false
  */
 
-package org.javastart.exam;
+package com.gmail.dimabah.javastart.exam.fourth;
 
-public class Task4 {
+public class Main {
     public static void main(String[] args) {
         String first = "abc";
         String second = "abc";

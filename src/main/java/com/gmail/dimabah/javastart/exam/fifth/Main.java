@@ -7,9 +7,9 @@
  * и 2
  */
 
-package org.javastart.exam;
+package com.gmail.dimabah.javastart.exam.fifth;
 
-public class Task5 {
+public class Main {
     public static void main(String[] args) {
         String text = "hello world. o";
         showFrequency(text);

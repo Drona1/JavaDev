@@ -9,11 +9,11 @@
  */
 
 
-package org.javastart.exam;
+package com.gmail.dimabah.javastart.exam.third;
 
 import java.util.Arrays;
 
-public class Task3 {
+public class Main {
     public static void main(String[] args) {
         int[] first = {2, 5, 7, 9, 10};
         int[] second = {1, 3, 4, 6, 8};

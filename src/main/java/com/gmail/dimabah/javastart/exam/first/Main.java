@@ -5,11 +5,11 @@
 
  */
 
-package org.javastart.exam;
+package com.gmail.dimabah.javastart.exam.first;
 
 import java.util.Scanner;
 
-public class Task1 {
+public class Main {
     public static void main(String[] args) {
         System.out.println(checkForCase());
     }

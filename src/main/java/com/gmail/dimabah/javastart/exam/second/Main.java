@@ -6,11 +6,11 @@
  * а во 2 - среднее арифметическое по всему массиву.
  */
 
-package org.javastart.exam;
+package com.gmail.dimabah.javastart.exam.second;
 
 import java.util.Arrays;
 
-public class Task2 {
+public class Main {
     public static void main(String[] args) {
         int[] arr = {4, 8, 2, 11, 6};
         double[] result = getStatistic(arr);

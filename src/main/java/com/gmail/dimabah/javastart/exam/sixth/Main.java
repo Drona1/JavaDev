@@ -4,9 +4,9 @@
  *  отвечать на вопрос содержится ли искомый int в матрице.
  */
 
-package org.javastart.exam;
+package com.gmail.dimabah.javastart.exam.sixth;
 
-public class Task6 {
+public class Main {
     public static void main(String[] args) {
         int[][] arr = {{15, 20, 40, 85},
                 {20, 35, 80, 95},
