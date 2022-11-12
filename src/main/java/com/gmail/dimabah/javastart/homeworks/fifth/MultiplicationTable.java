@@ -1,4 +1,4 @@
-package org.javastart.homework5;
+package com.gmail.dimabah.javastart.homeworks.fifth;
 //0. Распечатать на консоль таблицу умножения(
 // 1 * 1 = 1
 // 1 * 2 = 2

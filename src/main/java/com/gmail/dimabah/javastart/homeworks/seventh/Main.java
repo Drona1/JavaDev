@@ -19,7 +19,7 @@
  * "boo1.24a12312312" -> 1.24
  */
 
-package org.javastart.homework7;
+package com.gmail.dimabah.javastart.homeworks.seventh;
 
 import java.util.Arrays;
 

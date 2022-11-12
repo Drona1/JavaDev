@@ -1,4 +1,4 @@
-package org.javastart.homework5;
+package com.gmail.dimabah.javastart.homeworks.fifth;
 //2. Создать программу, которая имея переменную n типа int
 // с произвольным значением, рисует треугольник из n строк типа:
 //n = 4

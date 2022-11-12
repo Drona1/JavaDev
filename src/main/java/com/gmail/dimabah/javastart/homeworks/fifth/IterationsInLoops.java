@@ -1,4 +1,4 @@
-package org.javastart.homework5;
+package com.gmail.dimabah.javastart.homeworks.fifth;
 //1. Написать программу, итерирующуюся по всем числам,
 // кратным 5 от 5 до 150, и собрать их сумму.
 // Создать вариации с использованием разных циклов

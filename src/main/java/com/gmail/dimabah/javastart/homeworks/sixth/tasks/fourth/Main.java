@@ -4,7 +4,7 @@
  * (пользователь может вводить только алфавитные
  * латинские символы, lowercase)
  */
-package org.javastart.homework6.task4;
+package com.gmail.dimabah.javastart.homeworks.sixth.tasks.fourth;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package org.javastart.homework3;
+package com.gmail.dimabah.javastart.homeworks.third;
 
 public class VariablesAndLogicalOperations {
     public static void main(String[] args) {

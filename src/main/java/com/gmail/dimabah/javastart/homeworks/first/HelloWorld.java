@@ -1,4 +1,4 @@
-package org.javastart.homework1;
+package com.gmail.dimabah.javastart.homeworks.first;
 
 public class HelloWorld {
     public static void main(String[] args) {

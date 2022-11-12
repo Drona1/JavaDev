@@ -1,4 +1,4 @@
-package org.javastart.homework4;
+package com.gmail.dimabah.javastart.homeworks.fourth;
 
 public class FindMinimum {
     public static void main(String[] args) {
