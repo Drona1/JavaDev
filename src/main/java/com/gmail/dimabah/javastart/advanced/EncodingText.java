@@ -1,4 +1,4 @@
-package org.javastart.advanced;
+package com.gmail.dimabah.javastart.advanced;
 
 // Написать метод, который принимает на вход char[] с текстом
 // и энкодирует его в url-совместимый синтаксис

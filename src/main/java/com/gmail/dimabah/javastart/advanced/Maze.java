@@ -5,7 +5,7 @@
 * правого и вернуть возможный путь List<>.
 * Все пути<List<List<>>>?
 */
-package org.javastart.advanced;
+package com.gmail.dimabah.javastart.advanced;
 
 import java.util.*;
 

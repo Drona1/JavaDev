@@ -1,4 +1,4 @@
-package org.javastart.advanced;
+package com.gmail.dimabah.javastart.advanced;
 
 // Написать метод, который на вход принимает int [],
 // в котором содержится ряд чисел от 1 до n,
