@@ -100,8 +100,8 @@ public class Main {
                 + " is exponential");
 
         System.out.println("Next number is: "
-                + Math.round(Math.pow(Math.round(Math.pow(arr[arr.length - 1]
-                , (double) 1 / degree)) + result, degree)));
+                + (int)Math.round(Math.pow((Math.pow(arr[arr.length - 1]
+                , 1.0 / degree)) + result, degree)));
     }
 
     private static int getArithmeticSequence(int[] arr) {
@@ -124,7 +124,7 @@ public class Main {
         int step = arr[1] / arr[0];
         for (int i = 2; i < arr.length; i++) {
 
-            if (!(arr[i] / arr[i - 1] == step)|| arr[i] % arr[i - 1] !=0 ) {
+            if (arr[i - 1] == 0 || !(arr[i] / arr[i - 1] == step) || arr[i] % arr[i - 1] != 0) {
                 return 0;
             }
         }
@@ -135,19 +135,19 @@ public class Main {
         if (arr[0] == arr[1]) {
             return 0;
         }
-        int result = (int) (Math.round(Math.pow(arr[1], (double) 1 / degree))
-                - Math.round(Math.pow(arr[0], (double) 1 / degree)));
-        if (!(result == (int) (Math.round(Math.pow(arr[2], (double) 1 / degree))
-                - Math.round(Math.pow(arr[1], (double) 1 / degree))))) {
+        double result =  (Math.pow(arr[1], 1.0 / degree))
+                - Math.pow(arr[0],  1.0 / degree);
+        if (!(result ==  ((Math.pow(arr[2], 1.0 / degree))
+                - (Math.pow(arr[1],  1.0 / degree))))) {
             return 0;
         }
 
         for (int i = 3; i < arr.length; i++) {
-            if (!(result == Math.round(Math.pow(arr[i], (double) 1 / degree))
-                    - Math.round(Math.pow(arr[i - 1], (double) 1 / degree)))) {
+            if (!(result == Math.round(Math.pow(arr[i], 1.0 / degree))
+                    - (Math.pow(arr[i - 1],  1.0 / degree)))) {
                 return 0;
             }
         }
-        return result;
+        return (int)result;
     }
 }
