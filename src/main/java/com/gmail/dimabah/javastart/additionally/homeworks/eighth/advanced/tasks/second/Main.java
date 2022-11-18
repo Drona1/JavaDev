@@ -10,8 +10,8 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        File file = new File("src/main/java/org/javastart/additionally/" +
-                "homework8/level2/task2/text.txt");
+        File file = new File("src/main/java/com/gmail/dimabah/javastart/" +
+                "additionally/homeworks/eighth/advanced/tasks/second/text.txt");
         getStatistic(file);
     }
 

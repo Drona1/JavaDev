@@ -12,8 +12,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        File file = new File("src/main/java/org/javastart/additionally/" +
-                "homework8/task2/array.txt");
+        File file = new File("src/main/java/com/gmail/dimabah/javastart/" +
+                "additionally/homeworks/eighth/tasks/second/array.txt");
         int[][] arr = getArrayFromFile(file);
         for (var i : arr) {
             System.out.println(Arrays.toString(i));

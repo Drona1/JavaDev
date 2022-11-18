@@ -17,8 +17,8 @@ public class Main {
     }
 
     private static void saveInFile(int[][] arr) {
-        File file = new File("src/main/java/org/javastart/additionally/" +
-                "homework8/task2/array.txt");
+        File file = new File("src/main/java/com/gmail/dimabah/javastart/" +
+                "additionally/homeworks/eighth/tasks/second/array.txt");
 
         try (PrintWriter pw = new PrintWriter(file)) {
             file.createNewFile();

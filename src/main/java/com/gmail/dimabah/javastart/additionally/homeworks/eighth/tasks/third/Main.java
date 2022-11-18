@@ -9,7 +9,7 @@ import java.io.File;
 
 public class Main {
     public static void main(String[] args) {
-        String path = "src/main/java/org/javastart/";
+        String path = "src/main/java/com/gmail/dimabah/javastart/";
         showFolders(path);
     }
 
