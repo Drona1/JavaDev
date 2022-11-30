@@ -10,33 +10,37 @@ package com.gmail.dimabah.javastart.additionally.homeworks.sixth.advanced.tasks.
 
 public class Main {
     public static void main(String[] args) {
-        int max = 0;
-        for (int i = 999; i > 99; i--) {
-            for (int j = 999; j > 99; j--) {
-                if (i * j > max) {
-                    if (isPalindrome(i * j)) {
-                        max = i * j;
+        for (int degree = 2; degree < 7; degree++) {
+            long firstNum = 0;
+            long secondNum = 0;
+            long maxPalindrome = 0;
+            long currentNumber;
+            long startTime = System.currentTimeMillis();
+
+            for (long i = (long) (Math.pow(10, degree) - 1);
+                 (i * i) > maxPalindrome; i--) {
+                for (long j = i; (currentNumber = i * j) > maxPalindrome; j--) {
+                    if (isPalindrome(currentNumber)) {
+                        maxPalindrome = currentNumber;
+                        firstNum = i;
+                        secondNum = j;
                     }
                 }
             }
+            System.out.printf("The maximum palindrome resulting from multiplying two" +
+                            " %d-digit numbers: %-15d (%-10d and %10d)   elapsed time: %d ms",
+                    degree, maxPalindrome, firstNum, secondNum,
+                    System.currentTimeMillis() - startTime);
+            System.out.println();
         }
-        System.out.println("The maximum palindrome resulting from" +
-                " multiplying two three-digit numbers, is: "+max);
     }
 
-    private static boolean isPalindrome(int number) {
-        int left = 100000;
-        int right = 10;
-        while (number / left == 0) {
-            left /= 10;
-        }
-        while (left >= right) {
-            if (number % (left * 10) / left
-                    != number % right / (right / 10)) {
+    private static boolean isPalindrome(long number) {
+        String strNumber = "" + number;
+        for (int i = 0; i <= strNumber.length() / 2; i++) {
+            if (strNumber.charAt(i) != strNumber.charAt(strNumber.length() - i - 1)) {
                 return false;
             }
-            left /= 10;
-            right *= 10;
         }
         return true;
     }

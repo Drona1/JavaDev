@@ -13,7 +13,10 @@
 
 package com.gmail.dimabah.javastart.additionally.homeworks.sixth.advanced.tasks.first;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 
@@ -82,26 +85,14 @@ public class Main {
                     + (arr[arr.length - 1] * result));
             count++;
         }
-        result = getExponentialSequence(arr, 2);
-        if (result != 0) {
-            printExponentialSequence(arr, result, 2);
-            count++;
-        }
-        result = getExponentialSequence(arr, 3);
-        if (result != 0) {
-            printExponentialSequence(arr, result, 3);
+        long resultLong = getExponentialSequence(arr);
+        if (resultLong != 0) {
+            System.out.println("The sequence " + Arrays.toString(arr)
+                    + " is exponential");
+            System.out.println("Next number is: " +resultLong);
             count++;
         }
         return count;
-    }
-
-    private static void printExponentialSequence(int[] arr, int result, int degree) {
-        System.out.println("The sequence " + Arrays.toString(arr)
-                + " is exponential");
-
-        System.out.println("Next number is: "
-                + (int)Math.round(Math.pow((Math.pow(arr[arr.length - 1]
-                , 1.0 / degree)) + result, degree)));
     }
 
     private static int getArithmeticSequence(int[] arr) {
@@ -131,23 +122,63 @@ public class Main {
         return step;
     }
 
-    private static int getExponentialSequence(int[] arr, int degree) {
+    private static long getExponentialSequence(int... arr) {
         if (arr[0] == arr[1]) {
             return 0;
         }
-        double result =  (Math.pow(arr[1], 1.0 / degree))
-                - Math.pow(arr[0],  1.0 / degree);
-        if (!(result ==  ((Math.pow(arr[2], 1.0 / degree))
-                - (Math.pow(arr[1],  1.0 / degree))))) {
-            return 0;
+        DecimalFormat decimalFormat = new DecimalFormat("#.#####",
+                DecimalFormatSymbols.getInstance(Locale.ENGLISH));
+        double element = 0.0;
+        int step;
+        for (int i = 2; i <= 10; i++) {
+            boolean flag = true;
+            for (int k : arr) {
+                element = Math.pow(k, Math.pow(i, -1));
+                element = Double.parseDouble(decimalFormat.format(element));
+                if (element != Math.round(element) || element == 0.0) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) {
+                step = checkArithmeticSequenceExp(arr, i, decimalFormat);
+                if (step != 0) {
+                    return Math.round(Math.pow(element + step, i));
+                }
+                step = checkGeometricSequenceExp(arr, i, decimalFormat);
+                if (step != 0) {
+                    return Math.round(Math.pow(element * step, i));
+                }
+            }
         }
-
-        for (int i = 3; i < arr.length; i++) {
-            if (!(result == Math.round(Math.pow(arr[i], 1.0 / degree))
-                    - (Math.pow(arr[i - 1],  1.0 / degree)))) {
+        return 0;
+    }
+    private static int checkArithmeticSequenceExp(int[] arr, int degree, DecimalFormat decimalFormat) {
+        double temp = Math.pow(arr[1], Math.pow(degree, -1)) - Math.pow(arr[0], Math.pow(degree, -1));
+        int step = Integer.parseInt(decimalFormat.format(temp));
+        for (int j = 1; j < arr.length - 1; j++) {
+            temp = Math.pow(arr[j + 1], Math.pow(degree, -1)) - Math.pow(arr[j], Math.pow(degree, -1));
+            if (step != Integer.parseInt(decimalFormat.format(temp))) {
                 return 0;
             }
         }
-        return (int)result;
+        return step;
+    }
+
+    private static int checkGeometricSequenceExp(int[] arr, int degree, DecimalFormat decimalFormat) {
+        double temp = Math.pow(arr[1], Math.pow(degree, -1)) / Math.pow(arr[0], Math.pow(degree, -1));
+        temp = Double.parseDouble(decimalFormat.format(temp));
+        if (temp != Math.round(temp)) {
+            return 0;
+        }
+        int step = (int) temp;
+        for (int j = 1; j < arr.length - 1; j++) {
+            temp = Math.pow(arr[j + 1], Math.pow(degree, -1)) / Math.pow(arr[j], Math.pow(degree, -1));
+            temp = Double.parseDouble(decimalFormat.format(temp));
+            if (temp != Math.round(temp) || step != (int) temp) {
+                return 0;
+            }
+        }
+        return step;
     }
 }
