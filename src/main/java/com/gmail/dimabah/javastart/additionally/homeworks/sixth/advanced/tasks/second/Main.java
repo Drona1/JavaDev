@@ -37,7 +37,7 @@ public class Main {
 
     private static boolean isPalindrome(long number) {
         String strNumber = "" + number;
-        for (int i = 0; i <= strNumber.length() / 2; i++) {
+        for (int i = 0; i < strNumber.length() / 2; i++) {
             if (strNumber.charAt(i) != strNumber.charAt(strNumber.length() - i - 1)) {
                 return false;
             }
